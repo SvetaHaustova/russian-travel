@@ -1,11 +1,16 @@
 .footer__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, min-content);
+    column-gap: 19px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 @media screen and (max-width: 720px) {
     .footer__list {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: max-content;
+        row-gap: 32px;
         margin-bottom: 48px;
     }
 }
